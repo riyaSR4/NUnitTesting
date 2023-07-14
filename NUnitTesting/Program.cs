@@ -10,7 +10,7 @@ namespace NUnitTesting
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter input to be executed\n 1.Day of Week\n 2.Exit\n");
+                Console.WriteLine("Enter input to be executed\n 1.Day of Week\n 2.Vending Machine\n 3.Exit\n");
                 int input = Convert.ToInt32(Console.ReadLine());
                 switch (input)
                 {
@@ -19,6 +19,10 @@ namespace NUnitTesting
                         dayOfWeek.PrintDayOfWeek();
                         break;
                     case 2:
+                        VendingMachine vendingmachine = new VendingMachine();
+                        vendingmachine.Run();
+                        break;
+                    case 3:
                         flag = false;
                         break;
 
