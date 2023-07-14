@@ -11,7 +11,7 @@ namespace NUnitTesting
             while (flag)
             {
                 Console.WriteLine("Enter input to be executed\n 1.Day of Week\n 2.Vending Machine\n " +
-                    "3.Temperature Conversion\n 4.Exit\n");
+                    "3.Temperature Conversion\n 4.Monthly Payment\n 5.Exit\n");
                 int input = Convert.ToInt32(Console.ReadLine());
                 switch (input)
                 {
@@ -28,6 +28,10 @@ namespace NUnitTesting
                         temperatureconversion.ConvertTemperature();
                         break;
                     case 4:
+                        MonthlyPayment monthlyPayment = new MonthlyPayment();
+                        monthlyPayment.GetAmount();
+                        break;
+                    case 5:
                         flag = false;
                         break;
 
